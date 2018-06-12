@@ -56,23 +56,23 @@ app.get('/api/worldcup/news', (request, response) => {
 
 
 
-// schedule.scheduleJob('0 */1 * * * *', function(){
-//     operation.updateScors();
-//     console.log("done update scores")
-//   });
+schedule.scheduleJob('0 */1 * * * *', function(){
+    operation.updateScors();
+    console.log("done update scores")
+  });
 
-// schedule.scheduleJob('0 */4 * * * *', function(){
-//     operation.updateScors2();
-//     console.log("done update scores2")
-// });
+schedule.scheduleJob('0 */4 * * * *', function(){
+    operation.updateScors2();
+    console.log("done update scores2")
+});
 
-// schedule.scheduleJob('0 */5 * * * *' ,function(){
-//     operation.updateTeamsData();
-//     console.log("done update teamsData");
-// })
+schedule.scheduleJob('0 */5 * * * *' ,function(){
+    operation.updateTeamsData();
+    console.log("done update teamsData");
+})
 
-// schedule.scheduleJob('0 */30 * * *', function(){
-//     operation.removeAllNews();
-//     operation.updateNews();
-//     console.log('done update news');
-// });
+schedule.scheduleJob('0 */30 * * *', function(){
+    operation.removeAllNews();
+    operation.updateNews();
+    console.log('done update news');
+});
